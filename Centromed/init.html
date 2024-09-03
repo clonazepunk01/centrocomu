@@ -3,46 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Psicóloga</title>
-    <link rel="stylesheet" href="source/stylepcnt.css">
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="source/styleinit.css">
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <div class="navbar-brand">Centro comunitario</div>
+            <div class="navbar-brand">Centro Comunitario</div>
             <ul class="navbar-menu">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="#">Servicios</a></li>
                 <li><a href="#">Contacto</a></li>
-                <li><a href="#">Agendar Cita</a></li>
+                <li><a href="init.html">Registrarse</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="appointment-section">
+        <section class="register-section">
             <div class="container">
-                <h2>Agenda tu Cita</h2>
-                <form id="appointment-form">
+                <h2>Registrarse</h2>
+                <form id="register-form">
                     <label for="name">Nombre Completo:</label>
                     <input type="text" id="name" name="name" required>
 
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
 
-                    <label for="phone">Teléfono:</label>
-                    <input type="tel" id="phone" name="phone" required>
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
 
-                    <label for="date">Fecha de la Cita:</label>
-                    <input type="date" id="date" name="date" required>
+                    <label for="confirm-password">Confirmar Contraseña:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
 
-                    <label for="time">Hora de la Cita:</label>
-                    <input type="time" id="time" name="time" required>
-
-                    <label for="message">Mensaje Adicional (opcional):</label>
-                    <textarea id="message" name="message"></textarea>
-
-                    <button type="submit" class="btn">Agendar Cita</button>
+                    <a href="paciente.html" class="register-btn">Registrarse</a>
                 </form>
             </div>
         </section>
