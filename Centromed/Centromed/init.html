@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="source/styleinit.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-brand">Centro Comunitario</div>
+            <ul class="navbar-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="psc.html">Psicóloga</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="init.html">Registrarse</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="register-section">
+            <div class="container">
+                <h2>Registrarse</h2>
+                <form id="register-form">
+                    <label for="name">Nombre Completo:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <label for="confirm-password">Confirmar Contraseña:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+
+                    <a href="paciente.html" class="register-btn">Registrarse</a>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Centro Comunitario. Todos los derechos reservados.</p>
+            <p>Dirección: Juan Luis San Fuentes 0376, Nueva Imperial, Chile</p>
+            <p>Teléfono: +569 123123123</p>
+            <p>Email: centrocomunitarioimperial@gmail.com</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

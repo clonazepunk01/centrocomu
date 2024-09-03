@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="source/style.css">
+    <title>Centro Comunitario</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <img src="logo.png" alt="Logo">
+                <span>Centro comunitario</span>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="init.html">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="slider">
+        <div class="slides">
+            <div class="slide">
+                <img src="image3.jpeg" alt="Slider Image 1">
+                <div class="text-overlay">
+                    <h2>Bienvenido a nuestro centro</h2>
+                    <p>Donde tu bienestar es nuestra prioridad.</p>
+                </div>
+            </div>
+            <!-- Más slides si es necesario -->
+        </div>
+        <div class="navigation">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </div>
+
+    <div class="info-section">
+        <div class="info-box">
+            <h3>¿Quiénes somos?</h3>
+            <p>Somos un equipo de profesionales dedicados a tu bienestar de la comunidad.</p>
+        </div>
+        <div class="info-box">
+            <h3>¿Qué hacemos?</h3>
+            <p>El objetivo es mejorar la calidad de vida de las personas cuidadoras no remuneradas.</p>
+        </div>
+        <div class="info-box">
+            <h3>Contáctanos</h3>
+            <p>Si deseas consultar sobre nuestros beneficios, eventos y atenciones psicólogas, puedes contactarte con nosotros a través de nuestro correo o teléfono.</p>
+        </div>
+    </div>
+
+    <section class="appointment-section">
+        <div class="container">
+            <h2>Agenda tu cita</h2>
+            <p>Reserva una cita con nuestra psicóloga y recibe la atención que necesitas.</p>
+            <a href="paciente.html" class="appointment-btn">Agendar cita</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Centro Comunitario. Todos los derechos reservados.</p>
+            <p>Dirección: Juan Luis San Fuentes 0376, Nueva Imperial, Chile</p>
+            <p>Teléfono: +569 123123123</p>
+            <p>Email: centrocomunitarioimperial@gmail.com</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
