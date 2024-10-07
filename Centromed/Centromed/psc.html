@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agendar cita</title>
+    <title>Agenda y Pacientes - Psicóloga</title>
     <link rel="stylesheet" href="source/stylepsc.css">
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <div class="navbar-brand">Psicóloga</div>
+            <div class="navbar-brand">
+                <img src="logo.png" alt="Logo">
+            </div>
             <ul class="navbar-menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="#">Agenda</a></li>
-                <li><a href="#">Pacientes</a></li>
-                <li><a href="#">Perfil</a></li>
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="#" class="nav-link">Eventos</a></li>
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -32,12 +33,14 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <!-- Aquí se rellenarán las citas -->
                     <tr>
                         <td>01/10/2024</td>
                         <td>10:00</td>
                         <td>Juan Pérez</td>
                         <td><button class="btn">Ver Detalles</button></td>
                     </tr>
+                    <!-- Más filas según las citas -->
                 </tbody>
             </table>
         </section>
@@ -55,6 +58,7 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <!-- Aquí se rellenarán los pacientes -->
                     <tr>
                         <td>Juan Pérez</td>
                         <td>juan.perez@example.com</td>
@@ -64,6 +68,7 @@
                             <button class="btn btn-danger" onclick="deletePatient('1')">Eliminar</button>
                         </td>
                     </tr>
+                    <!-- Más filas según los pacientes -->
                 </tbody>
             </table>
         </section>
@@ -85,13 +90,8 @@
         </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 Centro Comunitario. Todos los derechos reservados.</p>
-            <p>Dirección: Juan Luis San Fuentes 0376, Nueva Imperial, Chile</p>
-            <p>Teléfono: +569 123123123</p>
-            <p>Email: centrocomunitarioimperial@gmail.com</p>
-        </div>
+    <footer class="footer">
+        <p>&copy; 2024 Centro. Todos los derechos reservados.</p>
     </footer>
 
     <script src="scripts.js"></script>

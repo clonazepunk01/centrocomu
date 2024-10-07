@@ -108,13 +108,10 @@ textarea {
     background-color: #005187;
 }
 
-footer {
+.footer {
     background-color: #003b5c;
     color: white;
     text-align: center;
     padding: 20px;
-}
-
-.footer-content p {
-    margin: 5px 0;
+    margin-top: 40px;
 }
