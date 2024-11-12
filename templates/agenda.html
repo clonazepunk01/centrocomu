@@ -1,0 +1,6 @@
+<h2>Agenda Semanal</h2>
+<ul>
+    {% for cita in citas %}
+        <li>{{ cita.fecha }} - {{ cita.hora }} - Paciente: {{ cita.paciente.nombre }} {{ cita.paciente.apellido }}</li>
+    {% endfor %}
+</ul>

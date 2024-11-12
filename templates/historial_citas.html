@@ -1,0 +1,6 @@
+<h2>Historial de Citas</h2>
+<ul>
+    {% for cita in citas %}
+        <li>{{ cita.fecha }} - {{ cita.hora }} - Estado: {{ cita.estado }}</li>
+    {% endfor %}
+</ul>

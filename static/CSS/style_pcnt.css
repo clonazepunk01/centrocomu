@@ -1,0 +1,139 @@
+/* Estilo general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e7e7e7;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #224972;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+}
+
+.navbar-brand img {
+    height: 60px;
+    filter: brightness(0) invert(1); /* Imagen en blanco */
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link {
+    color: #f0f4f8;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #f9fafb;
+    transform: scale(1.05);
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Estructura de la página */
+.main-content {
+    display: flex;
+    flex-grow: 1;
+    margin-top: 95px;
+    min-height: calc(100vh - 95px - 60px); /* Altura dinámica */
+    transition: margin-left 0.3s ease; /* Transición suave */
+}
+
+/* Sidebar colapsable */
+.sidebar {
+    width: 250px;
+    background-color: #224972;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 92px;
+    height: calc(100% - 95px);
+    transform: translateX(-250px); /* Oculto inicialmente */
+    transition: transform 0.3s ease;
+}
+
+.sidebar.active {
+    transform: translateX(0); /* Muestra el sidebar */
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-menu li {
+    margin-bottom: 15px;
+}
+
+.sidebar-menu a {
+    color: #f0f4f8;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.sidebar-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Área de contenido principal */
+.content-area {
+    padding: 40px;
+    width: 100%;
+    background-color: #f4f7f6;
+    margin-left: 0; /* Inicialmente sin margen */
+    transition: margin-left 0.3s ease; /* Transición suave para margen */
+}
+
+.content-area.collapsed {
+    margin-left: 250px;; /* Agregar margen cuando el sidebar esté visible */
+}
+
+/* Footer siempre al final */
+footer {
+    background-color: #003b5c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}

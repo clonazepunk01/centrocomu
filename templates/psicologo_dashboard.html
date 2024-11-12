@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'CSS/style_pcnt.css' %}">
+    <title>Panel de la Psicóloga</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <!-- Botón de menú -->
+            <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
+            <div class="navbar-brand">
+                <img src="{% static 'SRCS/logo.png' %}" alt="Logo">
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="{% url 'index' %}" class="nav-link">Inicio</a></li>
+                <li><a href="{% url 'logout' %}" class="nav-link">Cerrar sesión</a></li>
+                <li><a href="#" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sidebar y contenido principal -->
+    <div class="main-content">
+        <aside class="sidebar" id="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="#">Crear Usuario</a></li>
+                <li><a href="#">Agregar Horas Disponibles</a></li>
+                <li><a href="#">Modificar Citas</a></li>
+                <li><a href="#">Ver Agenda</a></li>
+                <li><a href="#">Ver Lista de Pacientes</a></li>
+                <li><a href="{% url 'logout' %}">Cerrar Sesión</a></li>
+            </ul>
+        </aside>
+
+        <section class="content-area">
+            <h2>Bienvenido al Panel de la Psicóloga</h2>
+            <p>Desde aquí puedes gestionar usuarios, agregar disponibilidad, ver tu agenda, y administrar citas.</p>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Centro Psicológico. Todos los derechos reservados.</p>
+            <p>Dirección: Juan Luis San Fuentes 0376, Nueva Imperial, Chile</p>
+            <p>Teléfono: +123 456 7890</p>
+            <p>Email: contacto@centropsicologico.com</p>
+        </div>
+    </footer>
+
+    <script src="{% static 'JS/script_pcnt.js' %}"></script>
+</body>
+</html>

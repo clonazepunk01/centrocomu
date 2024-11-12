@@ -1,0 +1,83 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+    <title>CCLANI - Inicio</title>
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <img src="{% static 'SRCS/logo.png' %}" alt="Logo">
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="{% url 'index' %}" class="nav-link">Inicio</a></li>
+                <li><a href="{% url 'login' %}" class="nav-link">Iniciar sesión</a></li>
+                <li><a href="#" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="slider">
+        <div class="slides">
+            <div class="slide">
+                <img src="{% static 'SRCS/image3.jpeg' %}" alt="Imagen">
+                <div class="text-overlay">
+                    <h2>Bienvenido a nuestro centro</h2>
+                    <p>Donde tu bienestar es nuestra prioridad.</p>
+                </div>
+            </div>
+            <!-- Más slides si es necesario -->
+        </div>
+        <div class="navigation">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </div>
+
+    <div class="info-section">
+        <div class="info-box">
+            <h3>¿Quiénes somos?</h3>
+            <p>Somos un equipo de profesionales dedicados a tu bienestar de la comunidad....</p>
+        </div>
+        <div class="info-box">
+            <h3>¿Qué hacemos?</h3>
+            <p>El objetivo es mejorar la calidad de vida de las personas cuidadoras no remuneradas.</p>
+        </div>
+        <div class="info-box">
+            <h3>Contáctanos</h3>
+            <p>Si necesitas ayuda o tienes alguna duda respecto a nuestros eventos y beneficios puedes contactarnos a nuestro número o correo.</p>
+        </div>
+    </div>
+
+    <div class="map-box">
+        <h2>Enuentranos aquí</h2>
+        <div id="map"></div>
+    </div>
+    
+
+
+
+    <!-- Cargar la API de Google Maps con tu clave API -->
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaWoGLDyk1YmG9D3bHi5Dhfqv5I2xjfXI&callback=initMap">
+    </script>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Centro Psicológico. Todos los derechos reservados.</p>
+            <p>Dirección: Juan Luis San Fuentes 0376, Nueva Imperial, Chile</p>
+            <p>Teléfono: +123 456 7890</p>
+            <p>Email: contacto@centropsicologico.com</p>
+        </div>
+    </footer>
+    
+
+    <script src="{% static 'JS/script.js' %}"></script>
+</body>
+</html>
